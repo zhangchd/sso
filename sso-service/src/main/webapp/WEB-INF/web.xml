@@ -1,0 +1,34 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <servlet>
+        <servlet-name>SSOAuth</servlet-name>
+        <servlet-class>com.sso.servlet.SSOAuthServlet</servlet-class>
+        <init-param>
+            <param-name>cookieName</param-name>
+            <param-value>SSOID</param-value>
+        </init-param>
+        <init-param>
+            <param-name>domainName</param-name>
+            <param-value>.sso.com</param-value>
+        </init-param>
+        <init-param>
+            <param-name>secure</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>secretKey</param-name>
+            <param-value>111111112222222233333333</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ticketTimeout</param-name>
+            <param-value>10080</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SSOAuth</servlet-name>
+        <url-pattern>/SSOAuth</url-pattern>
+    </servlet-mapping>
+</web-app>
