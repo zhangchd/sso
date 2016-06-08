@@ -21,7 +21,8 @@ import java.util.Map;
 /**
  * author: zhangchundi
  * date: 16/5/9
- * since: 1.0
+ * since: 1.1
+ * zhangchundi
  */
 public class SSOAuthFilter implements Filter {
 
